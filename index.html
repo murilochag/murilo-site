@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>murilochag</title>
+    <link rel="shortcut icon" href="imagens/murilo-cartoon.png">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F2D8C2;
+            overflow: hidden; /* Impede rolagem */
+            width: 100vw;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 40px; /* Ajustado */
+            color: #778C4A;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            animation: spin 4s linear infinite;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px; /* Ajustado */
+            width: 100%;
+            padding: 16px;
+            box-sizing: border-box; /* Evita overflow */
+        }
+
+        .social-links-link {
+            margin: 10px;
+            text-decoration: none;
+            color: #F2C49B;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            background-color: #778C4A;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .social-links-link:hover {
+            color: #778C4A;
+            background-color: #929CA6;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 16px;
+            }
+
+            .social-links-link {
+                width: 90%;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="title">Hi! My name is Murilo</h1>
+    </div>
+    <img src="imagens/murilo-cartoon.png" alt="Foto ilustrativa de Murilo em estilo cartoon">
+    <div class="social-links">
+        <a class="social-links-link" href="https://www.instagram.com/murilochag" target="_blank">Instagram</a>
+        <a class="social-links-link" href="https://github.com/murilochag" target="_blank">GitHub</a>
+        <a class="social-links-link" href="https://www.linkedin.com/in/murilochag" target="_blank">LinkedIn</a>
+    </div>
+</body>
+</html>
